@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.util.Collections;
 
 /**
  * The `GroupAnagrams` class provides a method to group words that are anagrams of each other.
@@ -36,12 +37,16 @@ public class GroupAnagrams {
 	}
 
 	static List<Set<String>> getGroupAnagrams(Reader reader) {
-		Map<String, Set<String>> map = new BufferedReader(reader).lines()
-				.flatMap(Pattern.compile("\\W+")::splitAsStream)
-				.collect(Collectors.groupingBy(GroupAnagrams::canonicalize, Collectors.toSet()));
+		try (BufferedReader br = new BufferedReader(reader)) {
+			Map<String, Set<String>> map = br.lines()
+					.flatMap(Pattern.compile("\\W+")::splitAsStream)
+					.collect(Collectors.groupingBy(GroupAnagrams::canonicalize, Collectors.toSet()));
 
-		return map.values().stream().filter(list -> list.size() > 1).collect(Collectors.toList());
-
+			return map.values().stream().filter(list -> list.size() > 1).collect(Collectors.toList());
+		} catch( Exception e) {
+			e.printStackTrace();
+		}
+		return Collections.emptyList();
 	}
 
 	static String sort(String ss) {
