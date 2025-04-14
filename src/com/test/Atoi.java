@@ -1,8 +1,19 @@
 package com.test;
 
 public class Atoi {
+	/*
+	 * Atoi class is a utility class that provides a method to convert a string
+	 * representation of an integer into its corresponding integer value.
+	 *
+	 * The class contains a static method called atoi that takes a string as input
+	 * and returns the integer value represented by that string. The method handles
+	 * both positive and negative integers, as well as invalid input cases.
+	 *
+	 * The doTestsPass method is used to test the functionality of the atoi method
+	 * with various test cases.
+	 */
 
-	// The purpose of the Atoi class is to provide a utility for converting a string representation of an integer into its corresponding integer value, similar to the atoi function in C.
+
 
 	
 	

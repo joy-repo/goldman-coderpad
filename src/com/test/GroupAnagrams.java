@@ -12,6 +12,14 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
+ * The `GroupAnagrams` class provides a method to group words that are anagrams of each other.
+ *
+ * Example:
+ * Input: "abc bac cat dog tac god mcs"
+ * Output: [["abc", "bac"], ["cat", "tac"], ["dog", "god"]]
+ *
+
+
  * Given a string of words, group the anagrams together. An anagram is a word
  * formed by rearranging the letters of a different word, using all the
  * original letters exactly once.

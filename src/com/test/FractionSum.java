@@ -3,6 +3,20 @@ package com.test;
 import java.util.Arrays;
 
 /**
+ * The `FractionSum` class provides a method to calculate the sum of two fractions
+ * and return the result as a new fraction.
+ *
+ * <p>Example:
+ * <pre>
+ * int[] frac1 = {7, 2}; // 7/2
+ * int[] frac2 = {2, 3}; // 2/3
+ * // The result is {29, 6} which represents 29/6.
+ * </pre>
+ * </p>
+ */
+
+
+/**
  * Given two fractions, calculate their sum and return the result as a new
  * fraction.
  *

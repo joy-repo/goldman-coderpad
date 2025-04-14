@@ -4,13 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Given a paragraph and two words, find the shortest distance between the two
- * words in the paragraph. The distance is defined as the number of characters
- * between the two words, including spaces and punctuation.
+ * The `DistanceBetween2Words` class provides a method to find the shortest distance
+ * between two words in a given paragraph. The distance is defined as the number of
+ * characters between the two words, including spaces and punctuation.
  *
+ * Example:
+ * Input: "In publishing and graphic design, lorem ipsum is a filler text commonly used to demonstrate the graphic elements",
+ * wordOne: "and", wordTwo: "graphic"
+ * Output: 6
  *
+ * Input: "Design filler text has been used in typesetting since the 1960s or earlier, when it was popularized by advertisements",
+ * wordOne: "transfer", wordTwo: "it"
+ * Output: 14
  *
  */
+
 public class DistanceBetween2Words {
 
 	public static double shortestDistance(String paragraph, String wordOne, String wordTwo) {

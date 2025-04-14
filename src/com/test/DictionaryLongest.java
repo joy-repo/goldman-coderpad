@@ -6,11 +6,15 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Given a string of letters, find the longest word that can be formed using
- * those letters. The words are checked against a dictionary.
+ * The `DictionaryLongest` class provides a method to find the longest words that can be formed
+ * from a given set of letters using a provided dictionary.
  *
+ * Example:
+ * Input: "toe", Dictionary: ["to", "toe", "toes", "doe", "dog", "god", "dogs"]
+ * Output: ["toe"]
  *
- *
+ * Input: "osetdg", Dictionary: ["to", "toe", "toes", "doe", "dog", "god", "dogs"]
+ * Output: ["toes", "dogs"]
  */
 
 class Dictionary {

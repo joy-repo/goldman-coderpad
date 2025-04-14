@@ -1,12 +1,25 @@
 package com.test;
 
 
-/**
- * generate combinations and permutations
- * of a given string, with or without repetition, based on a specified length.
- */
 
-public class CombinationOfString {
+
+public class CombinationOfString
+		/*
+ * CombinationOfString is a utility class that generates combinations and permutations
+ * from a predefined string and length. With the static string "qwe" and constant N = 2,
+ * the class provides the following methods:
+ *
+ * - combination: Recursively produces combinations of the string characters.
+ *   For example, with "qwe" and N = 2, the output will be "qw", "qe", and "we".
+ *
+ * - combination2: Uses an inclusion/exclusion strategy to generate combinations.
+ *
+ * - perm_with_repeat: Recursively builds string permutations (allowing repetitions)
+ *   until the permutation length equals the original string's length.
+ *
+ * - perm_without_repeat: Recursively generates permutations of length N without repeating characters.
+ *   For instance, with str = "qwe" and N = 2, the valid outputs include "qw", "wq", "qe", "eq", "we", and "ew".
+ */ {
 
 	static String str = "qwe";
 	static int N = 2;
