@@ -1,9 +1,22 @@
 package com.test;
+
+
 /**
- *  find the smallest element in a circularly sorted array.
- * A circularly sorted array is an array that is sorted but rotated at some pivot.
+ * The `CircularSortedArrayMinimumSmallest` class provides a method to find the smallest element
+ * in a circularly sorted array. A circularly sorted array is an array that is sorted but rotated
+ * at some pivot point.
  *
+ * Example:
+ * Input: [3, 4, 5, 6, 1, 2]
+ * Output: 1
+ *
+ * Input: [2, 1]
+ * Output: 1
+ *
+ * Input: [1]
+ * Output: 1
  */
+
 
 
 public class CircularSortedArrayMinimumSmallest {

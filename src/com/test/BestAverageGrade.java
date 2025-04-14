@@ -6,7 +6,26 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-// calculate the highest average grade among students based on their scores. It processes a 2D array of strings, where each sub-array contains a student's name and their score as a string.
+/**
+ * The BestAverageGrade class computes the highest average grade from a set of student scores.
+ *
+ * <p>The input is a 2D array where each element contains a student name and a grade (as a string).
+ * The method bestAvgGrade calculates the average grade for each student and returns the maximum average.</p>
+ *
+ * <p>Example:
+ * <pre>
+ * String[][] scores = {
+ *   {"Rohan", "84"},
+ *   {"Sachin", "102"},
+ *   {"Ishan", "55"},
+ *   {"Sachin", "18"}
+ * };
+ * // Rohan's average: 84, Sachin's average: 60, Ishan's average: 55
+ * // The result is 84.
+ * </pre>
+ * </p>
+ */
+
 
 public class BestAverageGrade {
 

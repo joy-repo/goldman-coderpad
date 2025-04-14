@@ -1,6 +1,20 @@
 package com.test;
 
 
+/**
+ * The Decimal class provides a method to convert a fraction represented by its numerator and denominator
+ * into its decimal representation. If the decimal representation has a repeating part, it is enclosed in parentheses.
+ *
+ * Example:
+ * Input: 6, 11
+ * Output: "0.(54)"
+ *
+ * Input: 1, 5
+ * Output: "0.2"
+ *
+ * Input: 1, 3
+ * Output: "0.(3)"
+ */
 
 
 public class Decimal {

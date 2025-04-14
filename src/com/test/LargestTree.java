@@ -6,13 +6,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
-/**
- * Given a map of immediate parent-child relationships, find the root of the
- * largest tree. If there are multiple trees of the same size, return the one
- * with the smallest root.
+
+
+/*
+ * The LargestTree class identifies the largest tree (by the number of descendant nodes)
+ * from given parent-child relationships.
  *
+ * It contains two key methods:
  *
+ * - getTreeSize: Traverses the tree using a depth-first search (via a stack) and counts all descendants.
+ *   Example: For a mapping where 2 is the parent of 1 and 3 (i.e. mapping: 2 -> [1, 3]),
+ *   calling getTreeSize with root 2 returns 2.
  *
+ * - largestTree: Converts an immediate parent mapping (child -> parent) into a parent-to-child mapping,
+ *   identifies root nodes (which never appear as a child), and then uses getTreeSize to compute each tree's size.
+ *   In case of tied sizes, it returns the tree with the smallest root id.
+ *   Example: Given an immediateParent mapping {1 -> 2, 3 -> 4}, the roots are 2 and 4.
+ *   Since both trees have one descendant each, the method returns 2.
  */
 
 public class LargestTree {

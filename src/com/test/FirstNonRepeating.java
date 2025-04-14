@@ -1,9 +1,20 @@
 package com.test;
 
 /**
- * A method to find the first non-repeating character
- * in a given string. It also includes a main method to test the functionality with various inputs.
+ * The `FirstNonRepeating` class provides a method to find the first non-repeating character
+ * in a given string. It uses an array to count the occurrences of each character.
+ *
+ * Example:
+ * Input: "apple"
+ * Output: 'a'
+ *
+ * Input: "racecars"
+ * Output: 'e'
+ *
+ * Input: "ababdc"
+ * Output: 'd'
  */
+
 
 public class FirstNonRepeating {
 
