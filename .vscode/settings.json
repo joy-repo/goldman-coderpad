@@ -1,0 +1,10 @@
+{
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Users\\Somrita\\.jdks\\corretto-17.0.9",
+            "default": true
+        }
+    ],
+    "java.configuration.detectJdksAtStart": false
+}
